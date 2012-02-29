@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+UPDATE ${1:table_name}
+	SET ${2:variables}
+	WHERE ${3:conditions}
+]]></content>
+	<tabTrigger>update</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

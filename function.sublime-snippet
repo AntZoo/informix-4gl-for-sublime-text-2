@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+##############################################################################
+##				${1:Function name}											##
+##				${2:Function description}									##
+##				Input:														##
+##						${3:vstupni hodnoty}								##
+##				Output:														##
+##						${4:vystupni hodnoty}								##
+##############################################################################
+FUNCTION ${1:function_name}(${5:parameters})
+DEFINE
+	${5/\s*([a-zA-Z0-9_]+)(,*)/$1\n\t/g}${6:more variables}
+
+	${7:code}
+	
+END FUNCTION
+]]></content>
+	<tabTrigger>function</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

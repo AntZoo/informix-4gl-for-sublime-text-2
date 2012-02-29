@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+INITIALIZE
+	$0
+TO NULL
+]]></content>
+	<tabTrigger>ini</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

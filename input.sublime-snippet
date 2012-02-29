@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+INPUT
+	$0
+END INPUT
+]]></content>
+	<tabTrigger>input</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

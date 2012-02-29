@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+RECORD
+	$0
+END RECORD
+]]></content>
+	<tabTrigger>record</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+IF ${1:condition} THEN
+	${2:code}
+END IF
+]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>

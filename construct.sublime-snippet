@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+CONSTRUCT
+	$0
+END CONSTRUCT
+]]></content>
+	<tabTrigger>construct</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

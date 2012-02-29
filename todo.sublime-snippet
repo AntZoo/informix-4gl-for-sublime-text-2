@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+		#TODO: $1
+		]]></content>
+	<tabTrigger>note</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

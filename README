@@ -1,0 +1,13 @@
+		=======================================
+		INFORMIX 4GL PACKAGE FOR SUBLIME TEXT 2
+		=======================================
+
+This is my first public git repository. It'll get better over time. :)
+
+Otherwise, the package is for Sublime Text 2. I work with Informix 4gl and have written basic support for it for Sublime Text 2, the best code editor out there. ;) The support is "basic" as in: 1) a couple of snippets, 2) 40% of syntax is sorted into groups for highlighting.
+
+As I learn new things about the language I will update this package. Plus, there are some updates planned for the close releases - more SQL snippets, frm, rpt files support.
+
+Stay tuned.
+
+Oh, and if you want to contact me, feel free: anton@zujev.eu. The package is free to use, modify and distribute. You can even sell it if you so wish. But do let me know about that. :)

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+WHILE ${1:condition}
+	${2:code}
+END WHILE
+]]></content>
+	<tabTrigger>while</tabTrigger>
+	<scope>source.4GL</scope>
+</snippet>
