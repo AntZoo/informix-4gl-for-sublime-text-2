@@ -60,18 +60,6 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>constant.other.taxnet.4gl</string>
-                <key>match</key>
-                <string>\b(PRVNI_STRANA|NAHORU|DOLU|PAGE_NAHORU|PAGE_DOLU|POSLEDNI_STRANA|UNIK|POTVRZENI|HLEDEJ|VLOZ|STORNUJ|GENERUJ|DALSI|PREDCHOZI|OPRAV|ZRUS_Z|PROHLIZENI|AKCE|UVODNI|POSLEDNI|CISLO|INFO|NAPOVEDA|NAVRAT|AKTIVNI|NORM|INV|OK|JINA_CHYBA|CHYBA_PRISTUPU)\b</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>constant.other.taxnet.4gl</string>
-                <key>match</key>
-                <string>\b(gc_null|gn_null|gc_adresar|gc_c_ufo|gc_fun|gc_jmeno_operatora|gc_klavesa|gc_kod_operatora|gc_kod_zastup|gc_lokalita|gc_podtrzeni80|gc_radek|gc_user|gc_verze_prog|gd_pocpl_zastup|gl_begin|gl_chyba|gl_rollback|gn_kod_spusteni|gn_mod|gn_rezim|gn_sec|gn_sleep|gn_wait|gc_cron|gl_heslo_ok|gl_test_hesla|gc_term|ga_trid|ga_ttrid|ga_dyntrid|ga_dynttrid|gc_web|gc_bezp_kod|gc_adisenv|gc_tisk6|gd_today|gl_upr|gc_disp_vyber|gc_disp_aktual|gc_disp_zapis|gc_disp_podtrz|gc_disp_array|gc_kod_spravce|gc_jmeno_spravce|gn_kod_spravce|gc_gro|gc_prog|gn_ga_vm|ga_vm[\.\w]*|gc_err_mess|gl_lad|gl_test|gn_ra|gn_kod_operatora|gn_err_mess|gn_flag|gn_flag1|gn_flag2|gn_flag3|gd_dat_kom|gc_cas_kom|gc_mis_kom|gc_adr_rep|gn_arch|gn_vol|gn_poc_del_0|gn_poc_upd_0|gn_poc_ins_0|gn_poc_err_0|gn_poc_del_1|gn_poc_upd_1|gn_poc_ins_1|gn_poc_err_1)\b</string>
-            </dict>
-            <dict>
-                <key>name</key>
                 <string>constant.numeric.4gl</string>
                 <key>match</key>
                 <string>\b(F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|F25|F26|F27|F28|F29|F30|F31|F32|F33|F34|F35|F36|F37|F38|F39|F40|F41|F42|F43|F44|F45|F46|F47|F48|F49|F50|F51|F52|F53|F54|F55|F56|F57|F58|F59|F60|F61|F62|F63|F64)\b</string>
