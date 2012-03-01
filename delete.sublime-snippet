@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+#TODO: DELETE!
+]]></content>
+	<tabTrigger>todo_delete</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

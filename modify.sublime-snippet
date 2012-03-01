@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+#TODO: MODIFY!
+]]></content>
+	<tabTrigger>todo_modify</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

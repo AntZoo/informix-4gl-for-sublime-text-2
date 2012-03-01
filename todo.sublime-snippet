@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-		#TODO: $1
-		]]></content>
-	<tabTrigger>note</tabTrigger>
+#TODO: $1
+]]></content>
+	<tabTrigger>todo</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>
