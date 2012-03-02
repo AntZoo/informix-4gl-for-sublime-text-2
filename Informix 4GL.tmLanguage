@@ -150,7 +150,7 @@
             </dict>
         </array>
         <key>name</key>
-        <string>Informix 4GL</string>
+        <string>Informix 4GL Source</string>
         <key>scopeName</key>
         <string>source.4gl</string>
         <key>fileTypes</key>

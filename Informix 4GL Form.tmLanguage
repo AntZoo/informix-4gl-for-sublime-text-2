@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>uuid</key>
+        <string>F831D3C5-C1C3-4BC7-AC20-8E9862B639EB</string>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>name</key>
+                <string>comment.line.number-sign.per</string>
+                <key>match</key>
+                <string>#.*</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>comment.line.double-dash.per</string>
+                <key>match</key>
+                <string>--.*</string>
+            </dict>
+            <dict>
+                <key>begin</key>
+                <string>{.*</string>
+                <key>name</key>
+                <string>comment.block.per</string>
+                <key>end</key>
+                <string>.*}</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>keyword.per</string>
+                <key>match</key>
+                <string>\b(DATABASE|SCREEN SIZE|BY|TABLES|END|ATTRIBUTES|TYPE|DECIMAL|CHAR|INTEGER|INSTRUCTIONS|DELIMITERS)\b</string>
+            </dict>
+        </array>
+        <key>name</key>
+        <string>Informix 4GL Form</string>
+        <key>scopeName</key>
+        <string>source.per</string>
+        <key>fileTypes</key>
+        <array>
+            <string>frm</string>
+            <string>per</string>
+        </array>
+        <key>foldingStopMarker</key>
+        <string>\b(END)\b</string>
+        <key>decreaseIndentPattern</key>
+        <string>\b(END)\b</string>
+        <key>foldingStartMarker</key>
+        <string>\b(INSTRUCTIONS|ATTRIBUTES|TABLES)\b</string>
+        <key>increaseIndentPattern</key>
+        <string>\b(INSTRUCTIONS|ATTRIBUTES|TABLES)\b</string>
+    </dict>
+</plist>
