@@ -26,6 +26,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Changes and updates:
 ----
 
+02.03.2012
+--
+More love for forms. The package now recognizes them. Nothing more - some syntax highlighting and stuff. Will have to improve later.
+
 01.03.2012
 --
 Added an MIT license statement to the README.
