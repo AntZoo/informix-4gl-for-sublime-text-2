@@ -10,5 +10,5 @@ CASE ${1:variable}
 END CASE
 ]]></content>
 	<tabTrigger>case</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

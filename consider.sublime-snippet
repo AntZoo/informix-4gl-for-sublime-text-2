@@ -2,6 +2,6 @@
 	<content><![CDATA[
 #TODO: CONSIDER
 ]]></content>
-	<tabTrigger>todo_zmen</tabTrigger>
+	<tabTrigger>todo_consider</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

@@ -4,9 +4,9 @@
 ##				${1:Function name}											##
 ##				${2:Function description}									##
 ##				Input:														##
-##						${3:vstupni hodnoty}								##
+##						${3:input}											##
 ##				Output:														##
-##						${4:vystupni hodnoty}								##
+##						${4:output}											##
 ##############################################################################
 FUNCTION ${1:function_name}(${5:parameters})
 DEFINE
@@ -17,5 +17,5 @@ DEFINE
 END FUNCTION
 ]]></content>
 	<tabTrigger>function</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

@@ -10,5 +10,5 @@ WHERE
 	${5:conditions}
 ]]></content>
 	<tabTrigger>select</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

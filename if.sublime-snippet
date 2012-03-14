@@ -5,5 +5,5 @@ IF ${1:condition} THEN
 END IF
 ]]></content>
 	<tabTrigger>if</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

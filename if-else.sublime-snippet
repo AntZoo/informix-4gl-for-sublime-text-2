@@ -7,5 +7,5 @@ ELSE
 END IF
 ]]></content>
 	<tabTrigger>ifelse</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

@@ -3,5 +3,5 @@
 DECLARE ${1:cursor_name} CURSOR FOR ${2:statement}
 ]]></content>
 	<tabTrigger>declare</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

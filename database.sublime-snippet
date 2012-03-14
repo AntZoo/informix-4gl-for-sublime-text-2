@@ -3,5 +3,5 @@
 DATABASE ${1:db_name}
 ]]></content>
 	<tabTrigger>database</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>

@@ -5,5 +5,5 @@ WHILE ${1:condition}
 END WHILE
 ]]></content>
 	<tabTrigger>while</tabTrigger>
-	<scope>source.4GL</scope>
+	<scope>source.4gl</scope>
 </snippet>
