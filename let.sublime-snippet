@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+LET ${1:variable} = ${2:value}
+]]></content>
+	<tabTrigger>let</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>
