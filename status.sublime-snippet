@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+CASE l_test_uspechu(STATUS)
+    WHEN 0
+        ${1:everything ok}
+    WHEN -1
+        IF l_chce_cekat() THEN
+            CONTINUE WHILE
+        ELSE
+            LET gc_fun = lc_fun
+            LET ll_kod = UNIK
+            RETURN ll_kod
+        END IF
+    WHEN 100
+        ${2:not found}
+    ${3:WHEN -3
+        LET ln_zprava = 838
+        LET lc_src = "usp"
+    }OTHERWISE
+        ${4:CALL l_chybove_ukonceni()}
+END CASE
+]]></content>
+    <tabTrigger>stat</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

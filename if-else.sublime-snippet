@@ -1,11 +1,11 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 IF ${1:condition} THEN
-	${2:code}
+    ${2:code}
 ELSE
-	${3:code}
+    ${3:code}
 END IF
 ]]></content>
-	<tabTrigger>ifelse</tabTrigger>
-	<scope>source.4gl</scope>
+    <tabTrigger>ife</tabTrigger>
+    <scope>source.4gl</scope>
 </snippet>

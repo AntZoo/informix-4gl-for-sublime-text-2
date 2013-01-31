@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+------------------------
+FUNCTION m_${1:module_name}()
+------------------------
+    WHENEVER ERROR CALL l_nastala_chyba
+    CALL st_l_set_vm("$1","${2:date}","zue","${3:adisver}")
+END FUNCTION
+------------------------$0
+]]></content>
+    <tabTrigger>setvm</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

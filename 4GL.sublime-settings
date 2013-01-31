@@ -1,3 +1,14 @@
 {
-	"trim_trailing_white_space_on_save": true
+    "default_encoding": "Central European (ISO 8859-2)",
+    "fallback_encoding": "Central European (ISO 8859-2)",
+    "rulers":
+    [
+        80
+    ],
+    "trim_trailing_white_space_on_save": true,
+    "word_separators": ",+-=<>/?^&*()[]\".",
+    "word_wrap": true,
+    "wrap_width": 82,
+    "ensure_newline_at_eof_on_save": true,
+    "default_line_ending": "unix"
 }

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 FOREACH ${1:cursor_name} INTO ${2:variables}
-	${3}
+    ${3}
 END FOREACH
 ]]></content>
 	<tabTrigger>foreach</tabTrigger>

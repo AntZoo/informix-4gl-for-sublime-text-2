@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-#TODO: CONSIDER!
+CALL l_begin()
 ]]></content>
-	<tabTrigger>todo_consider</tabTrigger>
+	<tabTrigger>tb</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

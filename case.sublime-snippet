@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 CASE ${1:variable}
-	WHEN ${2:value}
-		${3:code}
-	${4:WHEN} ${5:value}
-		${6:code}
-	OTHERWISE
-		${7:code}
+    WHEN ${2:value}
+        ${3:code}${4:
+    WHEN ${5:value}
+        ${6:code}}${7:
+    OTHERWISE
+        ${8:code}}
 END CASE
 ]]></content>
 	<tabTrigger>case</tabTrigger>

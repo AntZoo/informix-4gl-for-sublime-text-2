@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-#TODO: CONSIDER
+CALL l_rollback()
 ]]></content>
-	<tabTrigger>todo_consider</tabTrigger>
+	<tabTrigger>tr</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

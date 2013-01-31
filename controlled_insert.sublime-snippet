@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+WHILE TRUE
+    INSERT INTO
+        ${1:where to?}
+    VALUES
+        (${2:values})
+
+    CASE l_test_uspechu(STATUS)
+        WHEN 0
+            EXIT WHILE
+        WHEN -1
+            IF l_chce_cekat() THEN
+                CONTINUE WHILE
+            ELSE
+                LET gc_fun = lc_fun
+                LET ll_kod = UNIK
+                RETURN ll_kod
+            END IF
+        OTHERWISE
+            ${3:CALL l_chybove_ukonceni()}
+    END CASE
+END WHILE
+]]></content>
+    <tabTrigger>inscon</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

@@ -1,9 +1,7 @@
 <snippet>
     <content><![CDATA[
-INPUT
-    $0
-END INPUT
+# $1|zue: $0
 ]]></content>
-    <tabTrigger>inp</tabTrigger>
+    <tabTrigger>change</tabTrigger>
     <scope>source.4gl</scope>
 </snippet>

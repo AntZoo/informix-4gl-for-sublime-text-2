@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 CONSTRUCT
-	$0
+    $0
 END CONSTRUCT
 ]]></content>
-	<tabTrigger>construct</tabTrigger>
+	<tabTrigger>const</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

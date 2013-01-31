@@ -1,0 +1,68 @@
+<snippet>
+    <content><![CDATA[
+-------------------------------------------------------------------------------
+-- Sdílená funkce: ${1:nazev_f-ce}(${2:parametry})
+ 
+-- Autor: Anton Zujev
+--
+-- Základní popis funkce:
+-- ${3:popis}
+-- ...
+--==============================================================================
+-- PARAMETRY:
+--
+-- jméno        typ            význam               možné hodnoty
+--                                                  (null ?, význam hodnot)
+--------------------------------------------------------------------------------
+-- ${4:promenna}${5:typ}       ${6:vyznam}          ${7:hodnoty}
+-- ${8:promenna}${9:typ}       ${10:vyznam}         ${11:hodnoty}
+                                                   
+--==============================================================================
+-- VRACENÉ HODNOTY:
+--
+-- jméno        typ            význam               možné hodnoty
+--                                                  (null ?, význam hodnot)
+--------------------------------------------------------------------------------
+-- ${12:kod}    ${13:SMALLINT}  ${14:chybový kód}       ${15:0,1}
+-- ${16:zprava} ${17:SMALLINT}  ${18:kód chybové zprávy}${19:číslo chybové zprávy}
+-- ${20:src}    ${21:CHAR}      ${22:src chybové zprávy}${23:???}
+--==============================================================================
+--
+-- Funkce pracuje s databází: ${24:A/N}
+--        aktualizuje databázi: ${25:A/N}
+--
+-- Musí být volána uvnitř transakce: ${26:A/N}
+--
+-- Obsahuje zahájení transakce: ${27:A/N}
+-- Obsahuje ukončení transakce: ${28:A/N}
+--
+-- Komunikuje s uľivatelem přes terminál: ${29:A/N}
+--
+--==============================================================================
+    DEFINE  ll_kod      SMALLINT,
+            lc_src      CHAR(3),
+            ln_zprava   SMALLINT,
+            lc_fun      CHAR(30),
+            lc_error    CHAR(255)${30}
+
+    INITIALIZE
+        ll_kod, lc_src, ln_zprava, lc_error${31}
+    TO NULL
+
+    LET ll_kod = TRUE
+    LET lc_src = ""
+    LET ln_zprava = 0
+
+    LET lc_fun = gc_fun
+    LET gc_fun = "$1"
+
+    $0
+
+    LET gc_fun = lc_fun
+
+    RETURN${32: ll_kod, lc_src, ln_zprava}
+END FUNCTION     ###     $1()
+]]></content>
+    <tabTrigger>fsh</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

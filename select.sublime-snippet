@@ -1,14 +1,14 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 SELECT
-	${1:what?}
+    ${1:what?}
 ${2:INTO}
-	${3:where to?}
+    ${3:where to?}
 FROM
-	${4:where from?}
+    ${4:where from?}
 WHERE
-	${5:conditions}
+    ${5:conditions}
 ]]></content>
-	<tabTrigger>select</tabTrigger>
-	<scope>source.4gl</scope>
+    <tabTrigger>sel</tabTrigger>
+    <scope>source.4gl</scope>
 </snippet>

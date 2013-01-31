@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+DISPLAY
+    ${1:promenna}
+TO
+    ${2:pole}
+${3:ATTRIBUTE(REVERSE)}
+]]></content>
+	<tabTrigger>drev</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

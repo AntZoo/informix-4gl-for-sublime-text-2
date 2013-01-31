@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+###############################################################################
+FUNCTION ${1:function name}(${2:input})
+###############################################################################
+    DEFINE  ll_kod      SMALLINT,
+            lc_src      CHAR(3),
+            ln_zprava   SMALLINT,
+            lc_fun      CHAR(30),
+            lc_error    CHAR(255)${3}
+
+    INITIALIZE
+        ll_kod, lc_src, ln_zprava, lc_error${4}
+    TO NULL
+
+    LET ll_kod = TRUE
+    LET lc_src = ""
+    LET ln_zprava = 0
+
+    LET lc_fun = gc_fun
+    LET gc_fun = "$1"
+
+    $0
+
+    LET gc_fun = lc_fun
+
+    RETURN${5: ll_kod, lc_src, ln_zprava}
+END FUNCTION     ###     $1()
+]]></content>
+    <tabTrigger>fs</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

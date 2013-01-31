@@ -20,17 +20,35 @@
             </dict>
             <dict>
                 <key>begin</key>
-                <string>{.*</string>
+                <string>{.*?</string>
                 <key>name</key>
                 <string>comment.block.per</string>
                 <key>end</key>
-                <string>.*}</string>
+                <string>.*?}</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>keyword.per</string>
                 <key>match</key>
-                <string>\b(DATABASE|SCREEN SIZE|BY|TABLES|END|ATTRIBUTES|TYPE|DECIMAL|CHAR|INTEGER|INSTRUCTIONS|DELIMITERS)\b</string>
+                <string>\b(DATABASE|SCREEN SIZE|FORMONLY|UPSHIFT|BY|TABLES|END|ATTRIBUTES|NOENTRY|INVISIBLE|TYPE|INSTRUCTIONS|DELIMITERS|COMMENTS)\b</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>storage.type.per</string>
+                <key>match</key>
+                <string>\b(DECIMAL|CHAR|DATE|INTEGER)\b</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>string.quoted.single.per</string>
+                <key>match</key>
+                <string>'.*?'</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>string.quoted.double.per</string>
+                <key>match</key>
+                <string>".*?"</string>
             </dict>
         </array>
         <key>name</key>
@@ -39,8 +57,8 @@
         <string>source.per</string>
         <key>fileTypes</key>
         <array>
-            <string>frm</string>
             <string>per</string>
+            <string>PER</string>
         </array>
         <key>foldingStopMarker</key>
         <string>\b(END)\b</string>

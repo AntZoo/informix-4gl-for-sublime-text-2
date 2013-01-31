@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-DATABASE ${1:db_name}
+DATABASE adis_db_${1:fu/mf}
 ]]></content>
-	<tabTrigger>database</tabTrigger>
+	<tabTrigger>db</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

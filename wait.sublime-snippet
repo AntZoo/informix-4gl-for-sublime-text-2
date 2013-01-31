@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+IF l_chce_cekat() THEN
+    CONTINUE WHILE
+ELSE
+    LET gc_fun = lc_fun
+    LET ll_kod = UNIK
+    RETURN ll_kod
+END IF
+]]></content>
+    <tabTrigger>wait</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

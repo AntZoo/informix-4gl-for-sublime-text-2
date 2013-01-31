@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 INITIALIZE
-	$0
-TO NULL
+    $1
+TO NULL$0
 ]]></content>
-	<tabTrigger>ini</tabTrigger>
-	<scope>source.4gl</scope>
+    <tabTrigger>ini</tabTrigger>
+    <scope>source.4gl</scope>
 </snippet>

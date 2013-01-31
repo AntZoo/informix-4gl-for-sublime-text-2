@@ -1,7 +1,12 @@
 <snippet>
 	<content><![CDATA[
-#TODO: DELETE!
+DELETE
+    ${1:what?}
+FROM
+    ${2:where from?}
+WHERE
+    ${3:conditions}
 ]]></content>
-	<tabTrigger>todo_delete</tabTrigger>
+	<tabTrigger>del</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

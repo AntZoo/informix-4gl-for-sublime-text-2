@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+LET gc_fun = lc_fun
+RETURN${1: variables}$0
+]]></content>
+	<tabTrigger>fe</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

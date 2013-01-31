@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+MENU "${1:menu name}"
+    COMMAND KEY("${2:shortcut}") "${3:menu action}" "${4:menu action description}" HELP ${5:help number}
+        LET mn_menu = 1
+        CALL f_next_step()${6:\n}
+    COMMAND KEY("e","ě","é) "nápovĚda" "Nápovědné texty" HELP
+        LET mn_menu = 99
+        CALL f_next_step()
+    COMMAND KEY("n") "Návrat" "Návrat do předchozí nabídky" HELP
+        LET mn_menu = 0
+        EXIT MENU
+END MENU$0
+]]></content>
+    <tabTrigger>menu</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

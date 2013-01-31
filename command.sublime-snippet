@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+COMMAND KEY("${1:shortcut}") "${2:menu action}" "${3:menu action description}" HELP ${4:help number}
+]]></content>
+	<tabTrigger>com</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

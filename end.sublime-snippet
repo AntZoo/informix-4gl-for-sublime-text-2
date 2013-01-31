@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-CALL $1($2)${3: RETURNING}$0
+END $0
 ]]></content>
-	<tabTrigger>call</tabTrigger>
+	<tabTrigger>end</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

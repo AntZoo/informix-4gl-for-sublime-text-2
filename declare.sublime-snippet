@@ -2,6 +2,6 @@
 	<content><![CDATA[
 DECLARE ${1:cursor_name} CURSOR FOR ${2:statement}
 ]]></content>
-	<tabTrigger>declare</tabTrigger>
+	<tabTrigger>dec</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

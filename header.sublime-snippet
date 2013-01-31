@@ -1,24 +1,26 @@
 <snippet>
 	<content><![CDATA[
 ################################################################################
-##                                                                            ##
-##                                  ${1:name}                                 ##
-##                  ${2:description					}                     ##
-##                                                                            ##
-##      Manager:       ${3:manager_name}                                      ##
-##      Developer:     ${4:developer_name}                                    ##
-##      Date:          ${5:date}                                        ##
-##                                                                            ##
+--
+--                                  ${1:name}
+--                  ${2:description}
+--
+--      Analytik:       ${3:analytik}
+--      Programator:    Anton Zujev
+--      Datum:          ${4:date}
+--
 ################################################################################
-##                                                                            ##
-##      Function $1:                                                     ##
-##              Input:                                            			  ##
-##                          $6                                                ##
-##              Output:                                           			  ##
-##                          $7                                                ##
-##                                                                            ##
+--
+--      Funkce $1:
+--              vstupni parametry:
+--                          $5
+--              vystupni parametry:
+--                          ll_kod
+--                          lc_src, ln_zprava
+--                          $6
+--
 ################################################################################
 ]]></content>
-	<tabTrigger>header</tabTrigger>
+	<tabTrigger>head</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

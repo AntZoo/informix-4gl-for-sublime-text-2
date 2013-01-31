@@ -1,21 +1,36 @@
 <snippet>
 	<content><![CDATA[
 ##############################################################################
-##				${1:Function name}											##
-##				${2:Function description}									##
-##				Input:														##
-##						${3:input}											##
-##				Output:														##
-##						${4:output}											##
+--              ${1:Function name}
+--              ${2:Function description}
+--              Vstupni hodnoty:
+--                      ${3:vstupni hodnoty}
+--              Vystupni hodnoty:
+--                      ${4:vystupni hodnoty}
 ##############################################################################
 FUNCTION ${1:function_name}(${5:parameters})
 DEFINE
-	${5/\s*([a-zA-Z0-9_]+)(,*)/$1\n\t/g}${6:more variables}
+    lc_fun     CHAR(30),
+    ll_kod     SMALLINT,
+    lc_error   CHAR(255)
+    ${5/\s*([a-zA-Z0-9_]+)(,*)/$1\n\t/g}${6:more variables}
 
-	${7:code}
-	
-END FUNCTION
+    INITIALIZE
+        lc_fun, ll_kod, lc_error, ${7:initialize new variables}
+    TO NULL
+
+    LET lc_fun = gc_fun
+    LET gc_fun = "$1"
+    LET ll_kod = OK
+
+    CALL st_l_set_vm("$1","${8:date}","zue","${9:version}")
+
+    ${10:code}
+    
+    LET gc_fun = lc_fun
+    RETURN ll_kod, lc_src, ln_zprava
+END FUNCTION     ###     $1()
 ]]></content>
-	<tabTrigger>function</tabTrigger>
+	<tabTrigger>func</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

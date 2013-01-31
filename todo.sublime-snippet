@@ -2,6 +2,6 @@
 	<content><![CDATA[
 #TODO: $1
 ]]></content>
-	<tabTrigger>todo</tabTrigger>
+	<tabTrigger>td</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

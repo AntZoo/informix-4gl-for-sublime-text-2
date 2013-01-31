@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 RECORD
-	$0
+    $0
 END RECORD
 ]]></content>
-	<tabTrigger>record</tabTrigger>
-	<scope>source.4gl</scope>
+    <tabTrigger>rec</tabTrigger>
+    <scope>source.4gl</scope>
 </snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+LET lc_fun = gc_fun
+LET gc_fun = ${TM_FILENAME/(.+?).4gl/$1/}
+LET ll_kod = OK
+]]></content>
+	<tabTrigger>fb</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

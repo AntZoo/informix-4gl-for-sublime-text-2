@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-CALL $1($2)${3: RETURNING}$0
+CALL l_commit()
 ]]></content>
-	<tabTrigger>call</tabTrigger>
+	<tabTrigger>tc</tabTrigger>
 	<scope>source.4gl</scope>
 </snippet>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>uuid</key>
+        <string>F831D3C5-C1C3-4BC7-AC30-8E9862B639EB</string>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>name</key>
+                <string>comment.line.vzo</string>
+                <key>match</key>
+                <string>\.rem.*</string>
+            </dict>
+            <dict>
+                <key>begin</key>
+                <string>{.*?</string>
+                <key>name</key>
+                <string>comment.block.vzo</string>
+                <key>end</key>
+                <string>.*?}</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>keyword.control.vzo</string>
+                <key>match</key>
+                <string>\.if_block.*</string>
+            </dict>
+
+            <dict>
+                <key>name</key>
+                <string>keyword.options.vzo</string>
+                <key>match</key>
+                <string>\.\b(define|set|no_page|paging|endg)</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>constant.language.variable.4gl</string>
+                <key>match</key>
+                <string>\$\(:.*?\)</string>
+            </dict>
+        </array>
+        <key>name</key>
+        <string>Informix 4GL Vzor</string>
+        <key>scopeName</key>
+        <string>source.vzo</string>
+        <key>fileTypes</key>
+        <array>
+            <string>vzo</string>
+            <string>VZO</string>
+        </array>
+    </dict>
+</plist>

@@ -1,0 +1,53 @@
+<snippet>
+	<content><![CDATA[
+DATABASE adis_db_${1:fu/mf}
+
+GLOBALS "adis_glos.4gl"		#gc_fun atd
+GLOBALS "adis_glot.4gl"		#gn_kod_operatora, gn_kod_spravce atd
+GLOBALS "adan_glo1.4gl"		#NAHORU, OK, UNIK atd
+
+MAIN
+    DEFINE
+        ll_kod      SMALLINT,
+        lc_fun      CHAR(30),
+        lc_src      CHAR(3),
+        ln_zprava   SMALLINT
+
+    INITIALIZE
+        ll_kod, lc_fun, ln_kod
+    TO NULL
+
+    LET ll_kod = TRUE
+    LET lc_fun = gc_fun
+    LET gc_fun = "${2:${TM_FILENAME/(.+?).4gl/$1/}}_main"
+
+    DEFER INTERRUPT
+
+    WHENEVER ERROR CALL l_nastala_chyba
+
+    CALL l_zahajeni_programu("$2","$3")
+    CALL st_l_0000()    # Nastavi se gl_lad, gl_test
+    CALL st_l_initvm()
+
+    CALL m_$2()
+
+    CALL st_l_set_vm("$2m","${4:date}","zue","${5:version}")
+    CALL st_l_zob_vm_rpt()
+    CALL ini_konst()
+    
+    ${6:CALL otevri_cekej()}
+
+    CALL $2() RETURNING ll_kod
+
+    ${7:CALL zavri_cekej()}
+
+    IF ll_kod = TRUE THEN
+    	CALL l_ukonceni_programu()
+    ELSE
+        CALL l_chybove_ukonceni()
+    END IF
+END MAIN
+]]></content>
+	<tabTrigger>main</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>
