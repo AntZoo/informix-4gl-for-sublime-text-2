@@ -1,0 +1,57 @@
+<snippet>
+    <content><![CDATA[
+DATABASE FORMONLY
+SCREEN SIZE 24 BY 80
+
+{
+\g--------------------------------------------------------------------------------
+ADIS - DPH [x]    ${1:OZNÁMENÍ O ZAHÁJENÍ ŘÍZENÍ KE ZRUŠENÍ REGDPH}          ID: ${2:4310}
+\g--------------------------------------------------------------------------------
+ ÚP/DIČ[up |dic1      |dic2                |dic3           ]Čís.DS:[cds        ]
+ Obch.jméno[zkrobchjm              ]Dod.obch.jm[dodobchjm  ]        Typ DS:  [d]
+ Adresa    [adr1  |adr2                                    ]        ZMP:   [zmp]
+ Práv.forma[pfo]   NACE[nace  ] St.DS[s] Př.DIČ[p] Odd:[od]Ref:[re]Spr[spr     ]
+ ------------------------------------------------------------------------------
+$0
+\g---------------------------------------------------------------\g[akt  ]/[cit  ]\g--
+}
+END
+
+ATTRIBUTES
+    up          =   FORMONLY.c_fu               TYPE CHAR, COMMENTS=
+"${6:Číslo ÚP}";
+    dic1        =   FORMONLY.dic                TYPE CHAR, COMMENTS=
+       "${7:DIČ:IČO(8),RČ(9),RČ(10),VČP 6xxxxxxxx  (F4:nabídka)}";
+    dic2        =   FORMONLY.prijmeni           TYPE CHAR, UPSHIFT, COMMENTS=
+       "${8:Příjmení  (F4:nabídka)}";
+    dic3        =   FORMONLY.jmeno              TYPE CHAR, UPSHIFT, COMMENTS=
+       "${9:Jméno  (F4:nabídka)}";
+    cds         =   FORMONLY.c_ds               TYPE DECIMAL, COMMENTS=
+       "${10:IČO:(11)100..,RČ(9)2..0,RČ(10)3..,VČP(11)400xxxxxxxx  (F4:nabídka)}";
+    zkrobchjm   =   FORMONLY.zkrobchjm          TYPE CHAR, UPSHIFT, COMMENTS=
+       "${11:Zkrácené obchodní jméno  (F4:nabídka)}";
+    dodobchjm   =   FORMONLY.dodobchjm          TYPE CHAR, UPSHIFT, COMMENTS=
+       "${12:Dodatek obchodního jména  (F4:nabídka)}";
+    d           =   FORMONLY.typ_ds             TYPE CHAR, COMMENTS="${13:P-práv.os.,F-fyz.os.,S-spol.plátci,O-ObÚ,K-OkÚ,L-plát.pokl.,U-skupina}";
+    adr1        =   FORMONLY.c_obce             TYPE CHAR, COMMENTS="${14:Číslo obce  (F4: nabídka)}";
+    adr2        =   FORMONLY.adr2               TYPE CHAR, COMMENTS="${15:Název obce a ulice}";
+    zmp         =   FORMONLY.zmp                TYPE CHAR, COMMENTS=
+       "${16:Příznak ZMP: 0-standard.,1-odstěhovaný,2-přistěhovaný,3-odstěh.(pův.přistěh.)}";
+    pfo         =   FORMONLY.c_pfo              TYPE CHAR, COMMENTS="${17:Číslo právní formy organizace  (F4: nabídka)}";
+    nace        =   FORMONLY.c_nace             TYPE CHAR, COMMENTS="${18:Číslo NACE  (F4: nabídka)}";
+    s           =   FORMONLY.stav_ds            TYPE CHAR, COMMENTS="${19:Stav DS  (F4: nabídka)}";
+    p           =   FORMONLY.priz_dic           TYPE CHAR, COMMENTS="${20:Příznak DIČ  (F4: nabídka)}";
+    od          =   FORMONLY.k_org              TYPE CHAR, COMMENTS="${21:Číslo oddělení}";
+    re          =   FORMONLY.k_ref              TYPE CHAR, COMMENTS="${22:Číslo referátu}";
+    spr         =   FORMONLY.k_pracspr          TYPE CHAR, COMMENTS="${23:Kód správce  (F4: nabídka)}";
+
+    x           =   FORMONLY.x      TYPE CHAR, NOENTRY, INVISIBLE, COMMENTS="@@${3:dph_4310}|${4:07.12.12}|zue|ver. $5             ";
+END
+
+INSTRUCTIONS
+    DELIMITERS " "
+END
+]]></content>
+    <tabTrigger>dphform</tabTrigger>
+    <scope>source.per</scope>
+</snippet>

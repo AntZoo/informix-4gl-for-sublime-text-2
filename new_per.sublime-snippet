@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+DATABASE FORMONLY
+SCREEN SIZE 24 BY 80
+
+{
+\g--------------------------------------------------------------------------------
+ADIS - ${1:DPH} [x]    ${2:OZNÁMENÍ O ZAHÁJENÍ ŘÍZENÍ KE ZRUŠENÍ REGDPH}          ID: ${3:4310}
+\g--------------------------------------------------------------------------------
+$0
+\g---------------------------------------------------------------\g[akt  ]/[cit  ]\g--
+}
+END
+
+ATTRIBUTES
+    
+    x           =   FORMONLY.x      TYPE CHAR, NOENTRY, INVISIBLE, COMMENTS="@@${4:dph_4310}|${5:07.12.12}|zue|ver. $6              ";
+END
+
+INSTRUCTIONS
+    DELIMITERS " "
+END
+]]></content>
+    <tabTrigger>newform</tabTrigger>
+    <scope>source.per</scope>
+</snippet>

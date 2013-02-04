@@ -189,12 +189,12 @@
             <string>4GL</string>
         </array>
         <key>foldingStopMarker</key>
-        <string>\b(END FUNCTION|TO NULL|END CASE|END IF|END FOREACH)\b</string>
+        <string>^#*\s*\b(END FUNCTION|TO NULL|END CASE|END IF|END FOREACH)\b</string>
         <key>decreaseIndentPattern</key>
-        <string>\b(END FUNCTION|TO NULL|END CASE|END IF|END FOREACH|ELSE)\b</string>
+        <string>^#*\s*\b(END FUNCTION|TO NULL|END CASE|END IF|END FOREACH|ELSE)\b</string>
         <key>foldingStartMarker</key>
-        <string>\b((?&lt;!END )FUNCTION|DEFINE|(?&lt;!END )CASE|(?&lt;!END )IF|(?&lt;!END )FOREACH)\b</string>
+        <string>^#*\s*\b((FUNCTION|CASE|IF|FOREACH)\b</string>
         <key>increaseIndentPattern</key>
-        <string>\b((?&lt;!END )FUNCTION|DEFINE|(?&lt;!END )CASE|(?&lt;!END )IF|(?&lt;!END )FOREACH|ELSE)\b</string>
+        <string>^#*\s*\b(FUNCTION|DEFINE|CASE|IF|FOREACH|ELSE)\b</string>
     </dict>
 </plist>

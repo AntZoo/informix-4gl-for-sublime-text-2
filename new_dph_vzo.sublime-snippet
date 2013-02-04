@@ -1,0 +1,81 @@
+<snippet>
+    <content><![CDATA[
+.rem
+.rem Pro soubor : ${1:udph_4310t}
+.rem Distribuce : ${2:3581T6}
+.rem Autor      : Zujev
+.rem
+.rem [merge]
+.rem tmpllevel=0
+.rem dataHeader=r1|a1|a2|a3|a4|a5|a6|a7|a8|a9|a10|a11|a12|a13|a14|b1|b2|b3|b4|b5|b6|b7|b8|b9|c1|c2|c3|c4|c5|c6|c7|c8|c9|c10|c11|c12|c13|c14|c15|c16|c17|c18|c19|c20|c21
+.rem [form]
+.rem [dataFlow_desc_end]
+.define empty
+.set empty  " "
+.no_page
+.paging 1
+.rem
+.rem
+.rem
+.rem
+.rem ${3:Oznámení o zahájení řízení ke zrušení registrace k DPH}
+.rem
+.if_block [$r1 == 800] 
+    lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk lqqqqqqqqqqqqqqqqqqqqqk
+    x $(:a1                                       )x x $(:a2             ) x
+    x $(:a3                                )       x x dne $(:a4    )      x
+    x $(:a5)  $(:a6                        )       x mqqqqqqqqqqqqqqqqqqqqqj
+    x                                              x
+    x $(:a7                                       )x
+    x $(:a8                                       )x
+    x $(:a9)  $(:a10                              )x
+    x Čj.:        $(:a11                         ) x
+    x Vyřizuje:   $(:a12                         ) x
+    x Telefon:    $(:a13       )  linka:    $(:a14)x
+    x č. dveří: $(:b1 )                            x
+    mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
+     Daňový subjekt
+.if_block [$r1 == 700] 
+    lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk lqqqqqqqqqqqqqqqqqqqqqk
+    x $(:a1                                       )x x V$(:a2            ) x
+    x $(:a3                                )       x x dne $(:a4    )      x
+    x $(:a5)  $(:a6                        )       x mqqqqqqqqqqqqqqqqqqqqqj
+    x Čj.:        $(:a7                         )  x
+    x Vyřizuje:   $(:a9                          ) x
+    x Telefon:    $(:a10       )  linka:    $(:a11)x
+    x Fax:        $(:a12       )  č. dveří: $(:a13)x
+    x $(:a14                                      )x
+    mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
+              
+.if_block [$r1 == 701] 
+    lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk
+    x                                                  DIČ: $(:b9        ) x
+    x $(:b1                                        )                       x
+    x $(:b2                                        )                       x
+    x $(:b3                                        )                       x
+    x $(:b4                                                              ) x
+    x $(:b5                                                    )           x
+    x $(:b6                                                    )           x
+    x $(:b7                                                    )           x
+    mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj
+.if_block [$r1 == 1] 
+$0                                O Z N Á M E N Í
+                               o zahájení řízení
+
+
+         Shora  uvedený  správce  daně  tímto  podle ustanovení § 91 odst. 1
+    zákona  č.  280/2009 Sb., daňový řád, ve znění pozdějších předpisů (dále
+    jen "daňový řád"),
+                               o z n a m u j e ,
+.if_block [$r1 == 501]
+ 
+.if_block [$r1 == 502]
+    $(:c4                                                                  )
+.if_block [$r1 == 100]
+    K čj.: $(:b1                          )                 $(b2:          )
+.endg
+]]></content>
+    <tabTrigger>newvzor</tabTrigger>
+    <scope>source.vzo</scope>
+    <scope>source.vzo</scope>
+</snippet>
