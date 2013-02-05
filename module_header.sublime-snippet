@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+###############################################################################
+#  Jmeno modulu    : ${1:${TM_FILENAME/(.+?).4gl/$1/}}
+#  Autor           : Zujev
+#  Analytik        : $2
+#  Datum           : $3
+###############################################################################
+
+DATABASE adis_db_${4:fu/mf}${5:
+GLOBALS "adis_glos.4gl"        #gc_fun atd}${6:
+GLOBALS "adan_glo1.4gl"        #NAHORU, OK, UNIK atd}${7:
+GLOBALS "adis_glot.4gl"        #gn_kod_operatora, gn_kod_spravce atd}
+
+#DEFINE
+
+########################################################################
+FUNCTION m_$1()
+########################################################################
+    WHENEVER ERROR CALL l_nastala_chyba
+    CALL st_l_set_vm("$1", "$3", "zue", "$8")
+END FUNCTION     ###     m_$1()
+]]></content>
+    <tabTrigger>modhead</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>

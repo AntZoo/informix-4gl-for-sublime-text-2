@@ -75,7 +75,7 @@ $0                                O Z N Á M E N Í
     K čj.: $(:b1                          )                 $(b2:          )
 .endg
 ]]></content>
-    <tabTrigger>newvzor</tabTrigger>
+    <tabTrigger>newdphvzor</tabTrigger>
     <scope>source.vzo</scope>
     <scope>source.vzo</scope>
 </snippet>

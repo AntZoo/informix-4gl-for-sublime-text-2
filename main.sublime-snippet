@@ -1,10 +1,18 @@
 <snippet>
 	<content><![CDATA[
-DATABASE adis_db_${1:fu/mf}
+###############################################################################
+#  Jmeno modulu    : ${1:${TM_FILENAME/(.+?).4gl/$1/}}
+#  Autor           : Zujev
+#  Analytik        : ${2:Analytik}
+#  Datum           : ${3:Datum}
+#  Popis funkce    : ${4:Popis}
+###############################################################################
 
 GLOBALS "adis_glos.4gl"		#gc_fun atd
 GLOBALS "adis_glot.4gl"		#gn_kod_operatora, gn_kod_spravce atd
 GLOBALS "adan_glo1.4gl"		#NAHORU, OK, UNIK atd
+
+DATABASE adis_db_${5:fu/mf}
 
 MAIN
     DEFINE
@@ -19,33 +27,24 @@ MAIN
 
     LET ll_kod = TRUE
     LET lc_fun = gc_fun
-    LET gc_fun = "${2:${TM_FILENAME/(.+?).4gl/$1/}}_main"
+    LET gc_fun = "$1"
 
     DEFER INTERRUPT
-
     WHENEVER ERROR CALL l_nastala_chyba
 
-    CALL l_zahajeni_programu("$2","$3")
+    CALL l_zahajeni_programu("$2","${6:$4}")
     CALL st_l_0000()    # Nastavi se gl_lad, gl_test
     CALL st_l_initvm()
+    CALL st_l_set_vm("$1","${3:date}","zue","${7:version}")
 
-    CALL m_$2()
+    CALL m_${1/([a-zA-Z]+_\d+)m?/$1/}()
 
-    CALL st_l_set_vm("$2m","${4:date}","zue","${5:version}")
     CALL st_l_zob_vm_rpt()
     CALL ini_konst()
+
+    CALL $8()
     
-    ${6:CALL otevri_cekej()}
-
-    CALL $2() RETURNING ll_kod
-
-    ${7:CALL zavri_cekej()}
-
-    IF ll_kod = TRUE THEN
-    	CALL l_ukonceni_programu()
-    ELSE
-        CALL l_chybove_ukonceni()
-    END IF
+    CALL l_ukonceni_programu()
 END MAIN
 ]]></content>
 	<tabTrigger>main</tabTrigger>

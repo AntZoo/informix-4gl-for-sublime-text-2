@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+################################################################################
+--
+--                                  ${1:name}
+--                  ${2:description}
+--
+--      Analytik:       ${3:analytik}
+--      Programator:    Anton Zujev
+--      Datum:          ${4:date}
+--
+################################################################################
+--
+--      Funkce $1:
+--              vstupni parametry:
+--                          $5
+--              vystupni parametry:
+--                          ll_kod
+--                          lc_src, ln_zprava
+--                          $6
+--
+################################################################################
+]]></content>
+	<tabTrigger>head</tabTrigger>
+	<scope>source.4gl</scope>
+</snippet>

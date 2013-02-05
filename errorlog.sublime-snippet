@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+LET lc_error = "${1:error text}"
+CALL ERRORLOG(lc_error)
+]]></content>
+    <tabTrigger>errlog</tabTrigger>
+    <scope>source.4gl</scope>
+</snippet>
